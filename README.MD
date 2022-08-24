@@ -1,69 +1,34 @@
-#### Setup
+# Project Name
 
-```bash
-npm install && npm start
-```
+> Jobs API
+> Live demo [_here_](https://jobs-api-p1.herokuapp.com).
 
-#### Database Connection
+## Table of Contents
 
-1. Import connect.js
-2. Invoke in start()
-3. Setup .env in the root
-4. Add MONGO_URI with correct value
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Screenshots](#screenshots)
+- [Setup](#setup)
+- [Usage](#usage)
 
-#### Routers
+## Features
 
-- auth.js
-- jobs.js
+- Users can register and login to their accounts
+- Authenticated users can access jobs created by them, create a new job, edit their created job, and also delete what they have created
 
-#### User Model
+## Technologies Used
 
-Email Validation Regex
+- [NodeJS]()
+- [ExpressJS]()
+- [MongoDB]()
+- [Mongoose ODM]()
 
-```regex
-/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-```
+## Setup
 
-#### Register User
+- Clone this repo and run `npm install` to install all the dependencies.
+- Create a .env file in your project root folder and add your variables. See .env.example for assistance.
 
-- Validate - name, email, password - with Mongoose
-- Hash Password (with bcryptjs)
-- Save User
-- Generate Token
-- Send Response with Token
+## Usage
 
-#### Login User
-
-- Validate - email, password - in controller
-- If email or password is missing, throw BadRequestError
-- Find User
-- Compare Passwords
-- If no user or password does not match, throw UnauthenticatedError
-- If correct, generate Token
-- Send Response with Token
-
-#### Mongoose Errors
-
-- Validation Errors
-- Duplicate (Email)
-- Cast Error
-
-#### Security
-
-- helmet
-- cors
-- xss-clean
-- express-rate-limit
-
-Swagger UI
-
-```yaml
-/jobs/{id}:
-  parameters:
-    - in: path
-      name: id
-      schema:
-        type: string
-      required: true
-      description: the job id
-```
+- Run `npm start` to start the application.
+- Connect to the API using Postman on port 3000.
