@@ -13,15 +13,15 @@
 
 ## Features
 
-- Users can register and login to their accounts
-- Authenticated users can access jobs created by them, create a new job, edit their created job, and also delete what they have created
+- Users can register and login to their accounts.
+- Authenticated users can access jobs created by them, create a new job, edit their created job, and also delete jobs they have created.
 
 ## Technologies Used
 
-- [NodeJS]()
-- [ExpressJS]()
-- [MongoDB]()
-- [Mongoose ODM]()
+- [NodeJS](https://nodejs.org/en)
+- [ExpressJS](https://expressjs.com)
+- [MongoDB](https://www.mongodb.com)
+- [Mongoose ODM](https://mongoosejs.com)
 
 ## Setup
 
