@@ -7,7 +7,6 @@
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Screenshots](#screenshots)
 - [Setup](#setup)
 - [Usage](#usage)
 
