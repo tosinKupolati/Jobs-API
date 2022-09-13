@@ -1,4 +1,4 @@
-# JobsAPI-P1
+# Jobs API
 
 > Jobs API,
 > Live demo [_here_](https://jobs-api-p1.herokuapp.com).
