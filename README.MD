@@ -1,8 +1,5 @@
 # Jobs API
 
-> Jobs API,
-> Live demo [_here_](https://jobs-api-p1.herokuapp.com).
-
 ## Table of Contents
 
 - [Features](#features)
